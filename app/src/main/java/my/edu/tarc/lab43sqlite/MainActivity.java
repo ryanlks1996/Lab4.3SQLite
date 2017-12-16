@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if(values.isEmpty()){
             Toast.makeText(getApplicationContext(), getString(R.string.no_record_message), Toast.LENGTH_SHORT).show();
+            return;
         }
 
         UserRecordAdapter adapter = new UserRecordAdapter(this, R.layout.user_record, values);
